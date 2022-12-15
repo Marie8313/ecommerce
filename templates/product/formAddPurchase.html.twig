@@ -1,0 +1,9 @@
+  <div>
+        {{ form_start(formPurchase,
+            {
+                action :path('purchase_new',{idProduct: product.id})
+            }) 
+        }}
+            {{ form_widget(formPurchase) }}
+        {{ form_end(formPurchase) }}
+    </div>

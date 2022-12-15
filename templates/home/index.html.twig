@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<h1>Page d'accueil</p>
+
+<section class="users">
+{% for user in users %}
+    <p>{{user.firstname}} - {{user.lastname}} - {{user.email}}</p>
+{% endfor %}
+</section>
+
+<section class="products">
+    <h2>Produits disponibles</h2>
+    {% for product in products %}
+    <div>
+        <h3>{{product.name}}</h3>
+
+        {% for category in product.categories %}
+        <span class="badge">{{category}}</span>   
+        {% endfor %}
+        
+        <p>{{product.description}}<p>
+        <span>{{product.price|number_format(2) }}€</span>
+        <p>stock : {{product.stock}}</p>
+    </div>
+        
+    {% endfor %}
+</section>
+
+<section class="purchases products">
+    <h2>Achat effectués {{purchases|length}}</h2>
+    {% for purchase in purchases %}
+    <div>
+        <h3>{{purchase.product}}</h3>
+        <p>quantité : {{purchase.quantity}}</p>
+        <p>acheté par : {{purchase.user}}</p>
+        <p>Montant de la commande : {{purchase.amount|number_format(2) }}</p>
+    </div>
+    {% endfor %}
+</section>
+
+
+
+{% endblock %}

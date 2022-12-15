@@ -1,0 +1,121 @@
+
+/* *** MOBILE FIRST ********** */ 
+
+/* *************** GENERAL ******************* 
+**************************************************/
+
+  
+* { 
+    box-sizing: border-box;
+}
+
+html { 
+    font-size :62.5% ;
+}
+
+body { 
+font-size : 1.6rem ;
+background-color: rgb(255, 255, 255);
+font-family: 'Open Sans', sans-serif;
+margin-bottom:4em;
+padding-bottom: 4em; 
+
+}
+
+.main {
+    padding-bottom:6em; 
+    margin-bottom: 3em;  
+}
+
+.clear {
+    clear:both; 
+}
+
+.container {
+    max-width:1600px;
+    margin:auto;
+}
+
+img {
+    width: 100%; 
+}
+
+a {
+    text-decoration:none; 
+    color:black;
+}
+
+a:hover{
+    color:black; 
+    font-weight: bold;
+}
+
+ul{
+    padding:0;
+    margin : 1em; 
+}
+
+li {
+    list-style-type: none;  
+ }
+
+
+ h1,h2,h3{
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    margin : 1em; 
+ }
+
+ h1,h2,header strong{
+    font-size: 4rem; 
+    margin: 2em auto; 
+ }
+
+ h3{
+    font-size: 3.5rem; 
+ }
+
+ p {
+    text-align: justify;
+    margin : 1em; 
+ }
+
+ .center{
+    text-align:center; 
+ }
+
+ .error {
+    color:red;
+    font-weight: bold;
+    font-size:3rem; 
+ }
+
+
+ header {
+    background-color: grey;
+ }
+
+ section {
+    font-weight: normal;
+    font-size: 1.5rem; 
+    display:flex; 
+    flex-wrap: wrap;
+
+
+ }
+
+ .products div {
+    border: solid black 1px; 
+    border-radius: 32px; 
+    flex-basis: 30%; 
+    margin : 1em; 
+ }
+
+ .badge {
+    background-color: greenyellow; 
+    border-radius: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color : black; 
+ }
+
